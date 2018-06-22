@@ -1,0 +1,336 @@
+﻿
+@{
+    ViewData["Title"] = @Localizer["SMS_Dispatching"];
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+<!-- BREADCRUMBS -->
+<section class="breadcrumbs_block clearfix parallax">
+    <div class="container center">
+        <h2><b>@Localizer["SMS_Dispatching"]</b></h2>
+        <p>@Localizer["Slogan"]</p>
+    </div>
+</section><!-- //BREADCRUMBS -->
+<!-- start about Section -->
+<section id="abt_sec" style="padding: 30px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="title_sec">
+                    <h1>@Localizer["SMS_Dispatching"]</h1>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="abt">
+                    <p>@Localizer["Text1"]</p>
+                    <p>@Localizer["Text2"]</p>
+                    <p>@Localizer["Text3"]</p>
+                    <p>@Localizer["Text4"]</p>
+                    
+                    <h4 style="margin-bottom: 20px;"><b>@Localizer["SMS_Title"]</b></h4>
+                    <p>@Localizer["SMS_text1"]</p>
+                    <p>@Localizer["SMS_text2"]</p>
+                    <p>@Localizer["SMS_text3"]</p>
+                    <p>@Localizer["SMS_text4"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+<!-- ABOUT -->
+<section id="about">
+    <!-- SERVICES -->
+    <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- ROW -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot50">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/close-envelope.png">*@
+                            <i class="fa fa-envelope fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title1"]</b></p>
+                        <span>@Localizer["Services_text1"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot50">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/api-page.png">*@
+                            <i class="fa fa-cogs fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title2"]</b></p>
+                        <span>@Localizer["Services_text2"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot50">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/check2.png">*@
+                            <i class="fa fa-check-square fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title3"]</b></p>
+                        <span>@Localizer["Services_text3"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/microphone.png">*@
+                            <i class="fa fa-microphone fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title4"]</b></p>
+                        <span>@Localizer["Services_text4"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/smartphone.png">*@
+                            <i class="fa fa-mobile fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title5"]</b></p>
+                        <span>@Localizer["Services_text5"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/rss-symbol.png">*@
+                            <i class="fa fa-rss fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title6"]</b></p>
+                        <span>@Localizer["Services_text6"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/sms-message.png">*@
+                            <i class="fa fa-reply fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title7"]</b></p>
+                        <span>@Localizer["Services_text7"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/internet.png">*@
+                            <i class="fa fa-globe fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title8"]</b></p>
+                        <span>@Localizer["Services_text8"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                    <a class="services_item" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/sim.png">*@
+                            <i class="fa fa-h-square fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Title9"]</b></p>
+                        <span>@Localizer["Services_text9"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                </div>
+            </div><!-- //ROW -->
+        </div><!-- //CONTAINER -->
+    </div><!-- //SERVICES -->
+</section><!-- //ABOUT -->
+<!-- CLEAN CODE -->
+<div class="cleancode_block">
+    <!-- CONTAINER -->
+    <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <!-- CASTOM TAB -->
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active clearfix" id="tab1">
+                <p class="title"><b>SMS</b> @Localizer["Tab1_Title"]</p>
+                <span>@Localizer["Tab1_text"]</span>
+            </div>
+            <div class="tab-pane fade clearfix" id="tab2">
+                <p class="title"><b>SMS</b> @Localizer["Tab2_Title"]</p>
+                <span>@Localizer["Tab2_text"]</span>
+            </div>
+            <div class="tab-pane fade clearfix" id="tab3">
+                <p class="title"><b>SMS</b> @Localizer["Tab3_Title"]</p>
+                <span>@Localizer["Tab3_text"]</span>
+            </div>
+            <div class="tab-pane fade clearfix" id="tab4">
+                <p class="title"><b>SMS</b> @Localizer["Tab4_Title"]</p>
+                <span>@Localizer["Tab4_text"]</span>
+            </div>
+            <div class="tab-pane fade clearfix" id="tab5">
+                <p class="title"><b>SMS</b> @Localizer["Tab5_Title"]</p>
+                <span>@Localizer["Tab5_text"]</span>
+            </div>
+        </div>
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-envelope fa-3x service-icon-tabs"></i><span>SMS @Localizer["Tab1_Title"]</span></a></li>
+            <li><a href="#tab2" data-toggle="tab"><i class="fa fa-bullhorn fa-3x service-icon-tabs"></i><span>SMS @Localizer["Tab2_Title"]</span></a></li>
+            <li><a href="#tab3" data-toggle="tab"><i class="fa fa-percent fa-3x service-icon-tabs"></i><span>SMS @Localizer["Tab3_Title"]</span></a></li>
+            <li><a href="#tab4" data-toggle="tab"><i class="fa fa-envelope-open fa-3x service-icon-tabs"></i><span>SMS @Localizer["Tab4_Title"]</span></a></li>
+            <li><a href="#tab5" data-toggle="tab"><i class="fa fa-paperclip fa-3x service-icon-tabs"></i><span>SMS @Localizer["Tab5_Title"]</span></a></li>
+        </ul><!-- CASTOM TAB -->
+    </div><!-- //CONTAINER -->
+</div><!-- //CLEAN CODE -->
+<!-- ABOUT -->
+<section id="about">
+
+    <!-- PROJECTS -->
+    <section id="projects" class="padbot20">
+        <!-- CONTAINER -->
+        <div class="container">
+            <h2><b>@Localizer["Our_projects"]</b></h2>
+        </div><!-- //CONTAINER -->
+
+        <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <!-- PROJECTS SLIDER -->
+            <div class="owl-demo owl-carousel projects_slider">
+                <!-- work1 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/1.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work1 -->
+                <!-- work2 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/2.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work2 -->
+                <!-- work3 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/3.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work3 -->
+                <!-- work4 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/4.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work4 -->
+                <!-- work5 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/5.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work5 -->
+                <!-- work6 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/6.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work6 -->
+                <!-- work7 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/7.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work7 -->
+            </div><!-- //PROJECTS SLIDER -->
+        </div>
+
+        <!-- OUR CLIENTS -->
+        <div class="our_clients">
+            <!-- CONTAINER -->
+            <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+                <h2><b>@Localizer["Our_partners"]</b></h2>
+                <!-- ROW -->
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/1.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/2.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/3.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/4.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/5.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/6.jpg" alt="" />
+                    </div>
+                </div><!-- //ROW -->
+            </div><!-- CONTAINER -->
+        </div><!-- //OUR CLIENTS -->
+    </section><!-- //PROJECTS -->
+</section><!-- //ABOUT -->

@@ -1,0 +1,556 @@
+﻿
+@{
+    ViewData["Title"] = @Localizer["Career"];
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
+<!-- BREADCRUMBS -->
+<section class="breadcrumbs_block clearfix parallax">
+    <div class="container center">
+        <h2><b>@Localizer["Career"]</b></h2>
+        <p>@Localizer["Slogan"]</p>
+    </div>
+</section><!-- //BREADCRUMBS -->
+<!-- ABOUT -->
+<section id="about">
+    <!-- Promo Section -->
+    <div class="promo-section overflow-h">
+        <div class="container">
+            <div class="clearfix margbot50" style="margin-top:30px;">
+                <div class="col-md-12 col-md-offset-0 col-sm-12 ">
+                    <div class="text-center">
+                        <h3 class="color-red">@Localizer["Title1"]</h3>
+                        <hr />
+
+                        <p style="text-indent:0;font-size:16px;" class="fweight-400 col-md-10 col-md-offset-1">
+                            @Localizer["Title2"]
+                        </p>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1 wow fadeInLeft animated" data-wow-duration="1000ms" data-wow-delay="200ms">
+
+                        <p style="text-indent:0;">
+                            <ul>
+                                <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text1"] </span></li>
+                                <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text2"] </span></li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="200ms">
+
+                        <p style="text-indent:0;">
+                            <ul>
+                                <li><span style="font-size:15px;color: #585858 !important;">@Localizer["Text3"] </span></li>
+                                <li><span style="font-size:15px;color: #585858 !important;">@Localizer["Text4"] </span></li>
+                                <li><span style="font-size:15px;color: #585858 !important;">@Localizer["Text5"] </span></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row margbot30">
+                <div class="big-title text-center">
+                    <h3>
+                        <span class="accent-color">@Localizer["Title3"]</span>
+                    </h3>
+                    <p class="title-desc">@Localizer["Text6"]</p>
+                </div>
+                <div class="hr5" style="margin-top: 30px; margin-bottom: 35px;"></div>
+                <div class="col-md-4">
+                    <h4 class="classic-title"><span>@Localizer["Contact_us"]</span></h4>
+                    <div class="row">
+                        <form action="/en/Home/SendCv" enctype="multipart/form-data" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="23mal6caFYkVrgykKxGM9GDlZeAPMzd2lh6R5SX9RDT--PoatMHec2O-wMSxl3Awel0kUUQNcnXB7jEn6Y_ExQ_IC_iqe3Hw0AKluVYbaME1" />                <div class="row">
+                                <div class="form-group">
+                                    <label for="name">@Localizer["Your_name"]<span class="required">*</span></label>
+                                    <span class="name-missing"></span>
+                                    <input class="form-control" data-val="true" data-val-required="Please enter your name" id="FromName" name="FromName" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="FromName" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="e-mail">Email<span class="required">*</span></label>
+                                    <input class="form-control" data-val="true" data-val-email="Incorrect format" data-val-required="Please enter a valid e-mail" id="FromEmail" name="FromEmail" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="FromEmail" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group userMessage">
+                                    <label for="name">@Localizer["Message"]<span class="required">*</span></label>
+                                    <input class="form-control form-control-message" data-val="true" data-val-required="Please enter your message" id="Message" name="Message" type="text" value="" />
+                                    <span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name"><span class="required"></span></label>
+                                    <div class="col-md-5">
+                                        <input type="file" name="upload" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 20px">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-default" value="@Localizer["Send"]" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>                    <div class="g-recaptcha" data-sitekey="6LdYZycUAAAAAItvfYSHPH40D-8bOttJbGNACi_F"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- Modal -->
+                    <!-- Start 1 modal-->
+                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="col-sm-12">
+
+                                        <ul>
+                                            <b class="accent-color">Main duties:</b>
+                                            <li>• determining, negotiating and agreeing on in-house quality procedures, standards and specifications</li>
+                                            <li>• assessing customer requirements and ensuring that these are met</li>
+                                            <li>• specifying quality requirements of raw materials with suppliers</li>
+                                            <li>• investigating and setting standards for quality and health and safety</li>
+                                            <li>• ensuring that the processes comply with standards at both national and international level</li>
+                                            <li>• working with operating staff to establish procedures, standards and systems</li>
+                                            <li>• writing management and technical reports </li>
+                                            <li>• determining training needs</li>
+                                            <li>• acting as a catalyst for change and improvement in performance and quality</li>
+                                            <li>• directing objectives to maximize profitability</li>
+                                            <li>• recording, analyzing and distributing statistical information</li>
+                                            <li>• monitoring performance</li>
+                                            <b class="accent-color">Requirements:</b>
+                                            <li>•	Proven experience as a Quality Assurance Manager or relevant role</li>
+                                            <li>•	Thorough knowledge of methodologies of quality assurance and standards</li>
+                                            <li>•	Good knowledge of MS Office and databases</li>
+                                            <li>•	Outstanding communication skills</li>
+                                            <li>•	Excellent organizational and leadership abilities</li>
+                                            <li>•	Reliable and Trustworthy</li>
+                                            <li>•	Certification of quality control is a strong advantage (ISO 9000 etc.)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <center>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End 1 modal-->
+                    
+                    <!-- Start 2 modal-->
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="col-sm-12">
+
+                                        <ul>
+                                            <b class="accent-color">Main duties:</b>
+                                            <li>• determining, negotiating and agreeing on in-house quality procedures, standards and specifications</li>
+                                            <li>• assessing customer requirements and ensuring that these are met</li>
+                                            <li>• specifying quality requirements of raw materials with suppliers</li>
+                                            <li>• investigating and setting standards for quality and health and safety</li>
+                                            <li>• ensuring that the processes comply with standards at both national and international level</li>
+                                            <li>• working with operating staff to establish procedures, standards and systems</li>
+                                            <li>• writing management and technical reports </li>
+                                            <li>• determining training needs</li>
+                                            <li>• acting as a catalyst for change and improvement in performance and quality</li>
+                                            <li>• directing objectives to maximize profitability</li>
+                                            <li>• recording, analyzing and distributing statistical information</li>
+                                            <li>• monitoring performance</li>
+                                            <b class="accent-color">Requirements:</b>
+                                            <li>•	Proven experience as a Quality Assurance Manager or relevant role</li>
+                                            <li>•	Thorough knowledge of methodologies of quality assurance and standards</li>
+                                            <li>•	Good knowledge of MS Office and databases</li>
+                                            <li>•	Outstanding communication skills</li>
+                                            <li>•	Excellent organizational and leadership abilities</li>
+                                            <li>•	Reliable and Trustworthy</li>
+                                            <li>•	Certification of quality control is a strong advantage (ISO 9000 etc.)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <center>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End 2 modal-->
+                    <!-- Start 3 modal-->
+                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="col-sm-12">
+
+                                        <ul>
+                                            <b class="accent-color">Main duties:</b>
+                                            <li>• determining, negotiating and agreeing on in-house quality procedures, standards and specifications</li>
+                                            <li>• assessing customer requirements and ensuring that these are met</li>
+                                            <li>• specifying quality requirements of raw materials with suppliers</li>
+                                            <li>• investigating and setting standards for quality and health and safety</li>
+                                            <li>• ensuring that the processes comply with standards at both national and international level</li>
+                                            <li>• working with operating staff to establish procedures, standards and systems</li>
+                                            <li>• writing management and technical reports </li>
+                                            <li>• determining training needs</li>
+                                            <li>• acting as a catalyst for change and improvement in performance and quality</li>
+                                            <li>• directing objectives to maximize profitability</li>
+                                            <li>• recording, analyzing and distributing statistical information</li>
+                                            <li>• monitoring performance</li>
+                                            <b class="accent-color">Requirements:</b>
+                                            <li>•	Proven experience as a Quality Assurance Manager or relevant role</li>
+                                            <li>•	Thorough knowledge of methodologies of quality assurance and standards</li>
+                                            <li>•	Good knowledge of MS Office and databases</li>
+                                            <li>•	Outstanding communication skills</li>
+                                            <li>•	Excellent organizational and leadership abilities</li>
+                                            <li>•	Reliable and Trustworthy</li>
+                                            <li>•	Certification of quality control is a strong advantage (ISO 9000 etc.)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <center>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End 3 modal-->
+                    <!-- Start 4 modal-->
+                    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="col-sm-12">
+
+                                        <ul>
+
+                                            <b class="accent-color">Main duties:</b>
+                                            <li>• determining, negotiating and agreeing on in-house quality procedures, standards and specifications</li>
+                                            <li>• assessing customer requirements and ensuring that these are met</li>
+                                            <li>• specifying quality requirements of raw materials with suppliers</li>
+                                            <li>• investigating and setting standards for quality and health and safety</li>
+                                            <li>• ensuring that the processes comply with standards at both national and international level</li>
+                                            <li>• working with operating staff to establish procedures, standards and systems</li>
+                                            <li>• writing management and technical reports </li>
+                                            <li>• determining training needs</li>
+                                            <li>• acting as a catalyst for change and improvement in performance and quality</li>
+                                            <li>• directing objectives to maximize profitability</li>
+                                            <li>• recording, analyzing and distributing statistical information</li>
+                                            <li>• monitoring performance</li>
+                                            <b class="accent-color">Requirements:</b>
+                                            <li>•	Proven experience as a Quality Assurance Manager or relevant role</li>
+                                            <li>•	Thorough knowledge of methodologies of quality assurance and standards</li>
+                                            <li>•	Good knowledge of MS Office and databases</li>
+                                            <li>•	Outstanding communication skills</li>
+                                            <li>•	Excellent organizational and leadership abilities</li>
+                                            <li>•	Reliable and Trustworthy</li>
+                                            <li>•	Certification of quality control is a strong advantage (ISO 9000 etc.)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <center>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End 4 modal-->
+                        
+                    <div class="col-md-8">
+                        <h4 class="classic-title"><span>@Localizer["Our_vacancies"]</span></h4>
+                        <a href="#aboutModal" data-toggle="modal" data-target="#myModal1">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="03">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+
+                                        <img alt="" src="~/images/img11.jpg" />
+
+                                        <div class="member-name">
+                                            QUALITY ASSURANCE<span> MANAGER</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius at purus sit amet faucibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#aboutModal" data-toggle="modal" data-target="#myModal2">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="04">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+                                        <img alt="" src="~/images/img11.jpg" />
+                                        <div class="member-name">
+                                            HIGH VOLTAGE <span>TECHNICIAN</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius at purus sit amet faucibus. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#aboutModal" data-toggle="modal" data-target="#myModal3">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="05">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+                                        <img alt="" src="~/images/img11.jpg" />
+                                        <div class="member-name">
+                                            CONSTRUCTION COORDINATOR <span>E&I</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius at purus sit amet faucibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#aboutModal" data-toggle="modal" data-target="#myModal4">
+                            <div class="col-md-3" data-animation="fadeIn" data-animation-delay="06">
+                                <div class="team-member modern">
+                                    <div class="member-photo">
+                                        <img alt="" src="~/images/img11.jpg" />
+                                        <div class="member-name">
+                                            CONSTRUCTION COORDINATOR <span>E&I</span>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius at purus sit amet faucibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section><!-- //ABOUT -->
+<section id="about-banner">
+    <div class="cleancode_block">
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <div class="row">
+                <!-- CASTOM TAB -->
+                <div class="col-md-10 col-lg-10">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active clearfix" id="tab1">
+                            <p class="title"><b>@Localizer["Contact_us"]</b></p>
+                            <span>@Localizer["Slogan"]</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <div class="text-center">
+                        <a asp-area="" asp-action="Contacts" asp-route-culture="@culture">
+                            <div class="btn-theme btn-theme-sm btn-white-brd text-uppercase wow fadeInDown animated text-center" data-animation="fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" ">
+                                @Localizer["Contacts"]
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //CONTAINER -->
+    </div><!-- //CLEAN CODE -->
+</section>
+<!-- ABOUT -->
+<section id="about">
+
+    <!-- PROJECTS -->
+    <section id="projects" class="padbot20">
+        <!-- CONTAINER -->
+        <div class="container">
+            <h2><b>@Localizer["Our_projects"]</b></h2>
+        </div><!-- //CONTAINER -->
+
+        <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <!-- PROJECTS SLIDER -->
+            <div class="owl-demo owl-carousel projects_slider">
+                <!-- work1 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/1.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work1 -->
+                <!-- work2 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/2.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work2 -->
+                <!-- work3 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/3.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work3 -->
+                <!-- work4 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/4.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work4 -->
+                <!-- work5 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/5.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work5 -->
+                <!-- work6 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/6.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work6 -->
+                <!-- work7 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/7.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work7 -->
+            </div><!-- //PROJECTS SLIDER -->
+        </div>
+
+        <!-- OUR CLIENTS -->
+        <div class="our_clients">
+            <!-- CONTAINER -->
+            <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+                <h2><b>@Localizer["Our_partners"]</b></h2>
+                <!-- ROW -->
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/1.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/2.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/3.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/4.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/5.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/6.jpg" alt="" />
+                    </div>
+                </div><!-- //ROW -->
+            </div><!-- CONTAINER -->
+        </div><!-- //OUR CLIENTS -->
+    </section><!-- //PROJECTS -->
+</section><!-- //ABOUT -->
+
+

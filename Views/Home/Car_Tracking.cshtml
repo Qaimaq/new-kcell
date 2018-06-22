@@ -1,0 +1,332 @@
+﻿
+@{
+    ViewData["Title"] = @Localizer["Car_Tracking"];
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
+<!-- BREADCRUMBS -->
+<section class="breadcrumbs_block clearfix parallax">
+    <div class="container center">
+        <h2><b>@Localizer["Car_Tracking"]</b></h2>
+        <p>@Localizer["Slogan"]</p>
+    </div>
+</section><!-- //BREADCRUMBS -->
+<!-- start about Section -->
+<section id="abt_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="title_sec">
+                    <h1>@Localizer["Car_Tracking"]</h1>
+                    <h2>@Localizer["Slogan"]</h2>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+                <div class="abt">
+                    <p>
+                        @Localizer["Text1"]
+                        <ul>
+                            <li>@Localizer["List1"]</li>
+                            <li>@Localizer["List2"]</li>
+                            <li>@Localizer["List3"]</li>
+                            <li>@Localizer["List4"] </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+<!-- ABOUT -->
+<section id="about">
+    <!-- SERVICES -->
+    <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- ROW -->
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/satellite.png">*@
+                            <i class="fa fa-search fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Line1_Title1"]</b> @Localizer["Line1_Title2"]</p>
+                        <span>@Localizer["Line1_text1"]</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/bus-stop.png">*@
+                            <i class="fa fa-bus fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Line1_Title3"]</b> @Localizer["Line1_Title4"]</p>
+                        <span>@Localizer["Line1_text2"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/passenger-traffic.png">*@
+                            <i class="fa fa-user fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Line1_Title5"]</b> @Localizer["Line1_Title6"]</p>
+                        <span>@Localizer["Line1_text3"]</span>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/cloud-monitoring.png">*@
+                            <i class="fa fa-cloud fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>@Localizer["Line1_Title7"]</b> @Localizer["Line1_Title8"]</p>
+                        <span>@Localizer["Line1_text4"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/tire-pressure.jpg">*@
+                            <i class="fa fa-thermometer-quarter fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>Tire</b> Pressure</p>
+                        <span>@Localizer["Line2_text1"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/wialon-logistic.png">*@
+                            <i class="fa fa-undo fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>Wialon</b> Logistic</p>
+                        <span>@Localizer["Line2_text2"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/bus-report.jpg">*@
+                            <i class="fa fa-registered fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>Bus</b> Report</p>
+                        <span>@Localizer["Line2_text3"]</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
+                    <a class="item_car_tracking" href="javascript:void(0);">
+                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                            @*<img src="~/images/info-bus.jpg">*@
+                            <i class="fa fa-info fa-5x service-icon-home"></i>
+                        </div>
+                        <p><b>Info</b> Bus</p>
+                        <span>@Localizer["Line2_text4"]</span>
+                    </a>
+                </div>
+
+            </div><!-- //ROW -->
+        </div><!-- //CONTAINER -->
+    </div><!-- //SERVICES -->
+</section><!-- //ABOUT -->
+<section id="about-banner">
+    <div class="cleancode_block">
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <div class="row">
+                <!-- CASTOM TAB -->
+                <div class="col-md-10 col-lg-10">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active clearfix" id="tab1">
+                            <p class="title"><b>@Localizer["More_about_us"]</b></p>
+                            <span>@Localizer["Slogan"]</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <div class="text-center">
+                        <a asp-area="" asp-action="About" asp-route-culture="@culture">
+                            <div class="btn-theme btn-theme-sm btn-white-brd text-uppercase wow fadeInDown animated text-center" data-animation="fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" ">
+                                @Localizer["About"]
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //CONTAINER -->
+    </div><!-- //CLEAN CODE -->
+</section>
+<!-- ABOUT -->
+<section id="about">
+
+    <!-- PROJECTS -->
+    <section id="projects" class="padbot20">
+        <!-- CONTAINER -->
+        <div class="container">
+            <h2><b>@Localizer["Our_projects"]</h2>
+        </div><!-- //CONTAINER -->
+
+        <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <!-- PROJECTS SLIDER -->
+            <div class="owl-demo owl-carousel projects_slider">
+                <!-- work1 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/1.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work1 -->
+                <!-- work2 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/2.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work2 -->
+                <!-- work3 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/3.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work3 -->
+                <!-- work4 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/4.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work4 -->
+                <!-- work5 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/5.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work5 -->
+                <!-- work6 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/6.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work6 -->
+                <!-- work7 -->
+                <div class="item">
+                    <div class="work_item">
+                        <div class="work_img">
+                            <img src="~/images/works/7.jpg" alt="" />
+                            <a class="zoom" href="~/images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
+                        </div>
+                        <div class="work_description">
+                            <div class="work_descr_cont">
+                                <a href="portfolio-post.html">Ginger Beast</a>
+                                <span>17 March, 2041</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //work7 -->
+            </div><!-- //PROJECTS SLIDER -->
+        </div>
+
+        <!-- OUR CLIENTS -->
+        <div class="our_clients">
+            <!-- CONTAINER -->
+            <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+                <h2><b>@Localizer["Our_partners"]</b></h2>
+                <!-- ROW -->
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/1.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/2.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/3.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/4.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/5.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                        <img src="~/images/clients/6.jpg" alt="" />
+                    </div>
+                </div><!-- //ROW -->
+            </div><!-- CONTAINER -->
+        </div><!-- //OUR CLIENTS -->
+    </section><!-- //PROJECTS -->
+</section><!-- //ABOUT -->

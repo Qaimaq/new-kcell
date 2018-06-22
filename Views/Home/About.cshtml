@@ -1,0 +1,159 @@
+﻿@{
+    ViewData["Title"] = @Localizer["About"];
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@inject IOptions<RequestLocalizationOptions> LocOptions
+
+@inject IViewLocalizer Localizer
+
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
+<!-- BREADCRUMBS -->
+<section class="breadcrumbs_block clearfix parallax">
+    <div class="container center">
+        <h2><b>@Localizer["About"]</b></h2>
+        <p>@Localizer["Slogan"]</p>
+    </div>
+</section><!-- //BREADCRUMBS -->
+<section class="team">
+    <div class="container">
+        <div class="row margbot30">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="col-lg-12">
+                    <h2 class="text-center">@Localizer["Welcome"]</h2>
+                    <div class="row pt-md">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                <img src="~/images/img12.jpg" class="img-responsive">
+                                <h6 style="margin-top:15px;font-weight:500">Founder name  |  <span style="font-style:italic;font-weight:normal">founder</span></h6>
+
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-4 col-xs-12 profile">
+                            <p>@Localizer["Text1"]</p>
+                            <p>@Localizer["Text2"]</p>
+                            <p>@Localizer["Text3"]</p>
+                            <p>@Localizer["Text4"]</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-xs-12 profile">
+                        <h1 class="text-center">@Localizer["Title1"]</h1>
+                        <p>
+                            @Localizer["Text5"]<br>
+                            @Localizer["Text6"]<br>
+                            @Localizer["Text7"]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- start Counting section-->
+<section id="counting_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="counting_sl">
+                    <i class="fa fa-user"></i>
+                    <h2 class="counter-count">43753</h2>
+                    <h4>@Localizer["Counter1"]</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="counting_sl">
+                    <i class="fa fa-desktop"></i>
+                    <h2 class="counter-count">20210</h2>
+                    <h4>@Localizer["Counter2"]</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="counting_sl">
+                    <i class="fa fa-ticket"></i>
+                    <h2 class="counter-count">43753</h2>
+                    <h4>@Localizer["Counter3"]</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="counting_sl">
+                    <i class="fa fa-clock-o"></i>
+                    <h2 class="counter-count">45105</h2>
+                    <h4>@Localizer["Counter4"]</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services-banner">
+    <div class="cleancode_block">
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <div class="row">
+            <!-- CASTOM TAB -->
+            <div class="col-md-10 col-lg-10">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active clearfix" id="tab1">
+                        <p class="title"><b>@Localizer["Contact_us"]</b></p>
+                        <span>@Localizer["Slogan"]</span>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-lg-2">
+                <div class="text-center">
+                    <a asp-area="" asp-action="Contacts" asp-route-culture="@culture">
+                        <div class="btn-theme btn-theme-sm btn-white-brd text-uppercase wow fadeInDown animated text-center" data-animation="fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" style=" ">
+                            @Localizer["Contacts"]
+                        </div>
+                    </a>
+                </div>
+            </div>
+           </div>
+        </div><!-- //CONTAINER -->
+    </div><!-- //CLEAN CODE -->
+</section>
+
+<!-- ABOUT -->
+<section id="clients_sec">
+
+    <!-- OUR CLIENTS -->
+    <div class="our_clients" style="padding-top:0px;">
+
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <h2><b>@Localizer["Our_partners"]</b></h2>
+            <!-- ROW -->
+            <div class="row">
+
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/1.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/2.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/3.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/4.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/5.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/6.jpg" alt="" />
+                </div>
+            </div><!-- //ROW -->
+        </div><!-- CONTAINER -->
+    </div><!-- //OUR CLIENTS -->
+</section><!-- //ABOUT -->

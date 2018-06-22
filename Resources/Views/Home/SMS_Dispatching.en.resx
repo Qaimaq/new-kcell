@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Our_partners" xml:space="preserve">
+    <value>Our partners</value>
+  </data>
+  <data name="Our_projects" xml:space="preserve">
+    <value>Our projects</value>
+  </data>
+  <data name="Services_text1" xml:space="preserve">
+    <value>Informing about actions, news, events, invitations, work readiness reports</value>
+  </data>
+  <data name="Services_text2" xml:space="preserve">
+    <value>Automated distribution from your programs, sites and services with the help of special software protocols of API</value>
+  </data>
+  <data name="Services_text3" xml:space="preserve">
+    <value>Checking lists and single numbers for subscriber availability and cleaning databases from irrelevant numbers</value>
+  </data>
+  <data name="Services_text4" xml:space="preserve">
+    <value>Sending voice messages in the form of incoming calls to your partners, customers and employees using a special web interface</value>
+  </data>
+  <data name="Services_text5" xml:space="preserve">
+    <value>Sending of digital codes for confirmation of certain operations by means of a telephone number in an incoming call</value>
+  </data>
+  <data name="Services_text6" xml:space="preserve">
+    <value>Easy collection and replenishment of the subscriber base. Customers will be able to subscribe to and unsubscribe from newsletters</value>
+  </data>
+  <data name="Services_text7" xml:space="preserve">
+    <value>Reception and processing of SMS and calls from subscribers to federal numbers</value>
+  </data>
+  <data name="Services_text8" xml:space="preserve">
+    <value>Connect a federal virtual number to receive SMS. Such numbers work without the use of SIM cards and are directly transmitted by operators to our service via the Internet</value>
+  </data>
+  <data name="Services_text9" xml:space="preserve">
+    <value>Unlike virtual numbers, you can receive messages from Internet services, banks and payment systems that use alphabetic names to send</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Pragmatic IT solutions for your business</value>
+  </data>
+  <data name="SMS_Dispatching" xml:space="preserve">
+    <value>SMS Dispatching</value>
+  </data>
+  <data name="SMS_text1" xml:space="preserve">
+    <value>Today SMS distribution is one of the most effective tools</value>
+  </data>
+  <data name="SMS_text2" xml:space="preserve">
+    <value>SMS advertising provides a high frequency of reading</value>
+  </data>
+  <data name="SMS_text3" xml:space="preserve">
+    <value>Affordable cost, which is many times lower than direct marketing</value>
+  </data>
+  <data name="SMS_text4" xml:space="preserve">
+    <value>A greater percentage of responses compared to online and other traditional forms of marketing</value>
+  </data>
+  <data name="SMS_Title" xml:space="preserve">
+    <value>Why should you order an SMS advertisement today?</value>
+  </data>
+  <data name="Tab1_text" xml:space="preserve">
+    <value>One of the most convenient and fastest ways to communicate between you and customers. Speed, targeting, power.</value>
+  </data>
+  <data name="Tab1_Title" xml:space="preserve">
+    <value>Sending</value>
+  </data>
+  <data name="Tab2_text" xml:space="preserve">
+    <value>Ideal for cases where you want to send SMS not to the base of old clients, but to attract new ones</value>
+  </data>
+  <data name="Tab2_Title" xml:space="preserve">
+    <value>Advertising</value>
+  </data>
+  <data name="Tab3_text" xml:space="preserve">
+    <value>Carrying out all kinds of actions (find the code on the product, send it via SMS and get a prize). Stimulation of consumer demand.</value>
+  </data>
+  <data name="Tab3_Title" xml:space="preserve">
+    <value>Promotions</value>
+  </data>
+  <data name="Tab4_text" xml:space="preserve">
+    <value>A service that allows you to receive SMS messages from your customers. Two-way communication channel with your customers.</value>
+  </data>
+  <data name="Tab4_Title" xml:space="preserve">
+    <value>Receiving</value>
+  </data>
+  <data name="Tab5_text" xml:space="preserve">
+    <value>Add to your sms attachment as a file, brochure, picture, video, coupon or link to the site. Get the advantage of e-mail at no additional cost.</value>
+  </data>
+  <data name="Tab5_Title" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Of course, mobile marketing is one of the most effective channels of communication with customers.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>In particular one of its ways is SMS sending. Promotional SMS messages bearing useful information for the recipient are not irritating, provide stable contact with the target audience and provide the widest opportunities for informing customers about special promotions, events and other news of the company.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>But the SMS mailing on the contact database has one major drawback with other advertising tools. SMS mailing serves to communicate with regular customers / visitors, but does not attract new customers!</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>This method is completely analogous to the placement of advertisements on the air of the television and radio channels, and precisely also harmoniously combines the mass character and legality.</value>
+  </data>
+  <data name="Title1" xml:space="preserve">
+    <value>Mass mailing</value>
+  </data>
+  <data name="Title2" xml:space="preserve">
+    <value>Gateway for programs and API</value>
+  </data>
+  <data name="Title3" xml:space="preserve">
+    <value>Checking availability numbers</value>
+  </data>
+  <data name="Title4" xml:space="preserve">
+    <value>Voice mailings</value>
+  </data>
+  <data name="Title5" xml:space="preserve">
+    <value>Sending codes</value>
+  </data>
+  <data name="Title6" xml:space="preserve">
+    <value>Auto subscription</value>
+  </data>
+  <data name="Title7" xml:space="preserve">
+    <value>Receiving SMS and calls</value>
+  </data>
+  <data name="Title8" xml:space="preserve">
+    <value>Virtual numbers</value>
+  </data>
+  <data name="Title9" xml:space="preserve">
+    <value>SIM-hosting</value>
+  </data>
+</root>

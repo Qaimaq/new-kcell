@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Біз туралы</value>
+  </data>
+  <data name="Car_Tracking" xml:space="preserve">
+    <value>Көлік мониторингі</value>
+  </data>
+  <data name="Car_Tracking_text" xml:space="preserve">
+    <value>Көліктің спутниктік мониторингінің заманауи және тиімді жүйесі.</value>
+  </data>
+  <data name="Car_Tracking_text2" xml:space="preserve">
+    <value>Автокөлік шығындарын оңтайландыру, паркті басқарудың тиімділігі, көлік қауіпсіздігі, отынды тұтынуды бақылау және қашықтан басқару.</value>
+  </data>
+  <data name="Car_Tracking_text3" xml:space="preserve">
+    <value>Мұның барлығын Kcell Solutions іске асыруға көмектеседі.</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Байланыс</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Толығырақ</value>
+  </data>
+  <data name="Our_partners" xml:space="preserve">
+    <value>Біздің партнерлер</value>
+  </data>
+  <data name="Our_projects" xml:space="preserve">
+    <value>Біздің проекттер</value>
+  </data>
+  <data name="Slogan" xml:space="preserve">
+    <value>Бизнесіңіздің прагматикалық IТ шешімдері</value>
+  </data>
+  <data name="Slogan2" xml:space="preserve">
+    <value>Біз әлемдік өндірушілерден және өз саласындағы көшбасшылардан бағдарламалық қамтаманы жеткіземіз</value>
+  </data>
+  <data name="SMS_Dispatching" xml:space="preserve">
+    <value>СМС Тарату</value>
+  </data>
+  <data name="SMS_Dispatching_text" xml:space="preserve">
+    <value>Kcell Solutions ең қолайлы және сенімді жағдайдағы SMS жеткізу қызметін ұсынады.</value>
+  </data>
+  <data name="SMS_Dispatching_text2" xml:space="preserve">
+    <value>Біз таратудын барлық түрлерін ұсынамыз - акция туралы ақпарат, жаңалықтар, шақыру, құттықтаулар, есеп беру бойынша жұмыс.</value>
+  </data>
+  <data name="SMS_Dispatching_text3" xml:space="preserve">
+    <value>Өзіңіздің бизнесіңізді бізбен бірге дамытыңыз!</value>
+  </data>
+  <data name="Software" xml:space="preserve">
+    <value>Программалық қамтама</value>
+  </data>
+  <data name="Software_text" xml:space="preserve">
+    <value>Әлемдегі жетекші компаниялардан бағдарламалық қамтаманы ресми жеткізу.</value>
+  </data>
+  <data name="Software_text2" xml:space="preserve">
+    <value>Бұлтты бағдарламалар мен жыл сайынғы лицензияларды жеткізу. Барлық бағалар ҚҚС 12% құрайды. Microsoft, Autodesk, Google, және бағдарламалары.</value>
+  </data>
+  <data name="Software_text3" xml:space="preserve">
+    <value>Үздік бағалар және жеңілдіктердің икемді жүйесі</value>
+  </data>
+  <data name="Tab1_text1" xml:space="preserve">
+    <value>Енгізу</value>
+  </data>
+  <data name="Tab1_text2" xml:space="preserve">
+    <value>Жылдамдығы</value>
+  </data>
+  <data name="Tab1_text3" xml:space="preserve">
+    <value>Біз өте жоғары сапалы өнім жасауға тырысамыз, сондықтан біздің қызметіміз таза және ұқыпты. Таңдауыңызға қарамастан, жоспарыңызды өзіңіздің қалауыңызға қарай қосуға немесе өзгертуге болады.</value>
+  </data>
+  <data name="Tab1_text4" xml:space="preserve">
+    <value>Енгізу жылдамдығы</value>
+  </data>
+  <data name="Tab2_text1" xml:space="preserve">
+    <value>Тұрақты</value>
+  </data>
+  <data name="Tab2_text2" xml:space="preserve">
+    <value>Қолдау</value>
+  </data>
+  <data name="Tab2_text3" xml:space="preserve">
+    <value>Біз өз клиенттерімізге жұмыс барысында туындайтын қиындықтарды шешуге көмектесеміз және тұрақты жұмыс істейміз.</value>
+  </data>
+  <data name="Tab2_text4" xml:space="preserve">
+    <value>Тұрақты қолдау</value>
+  </data>
+  <data name="Tab3_text1" xml:space="preserve">
+    <value>Кез Келген</value>
+  </data>
+  <data name="Tab3_text2" xml:space="preserve">
+    <value>Құрылғылар</value>
+  </data>
+  <data name="Tab3_text3" xml:space="preserve">
+    <value>Біздің жүйелер кез-келген құрылғыда және кез-келген операциялық жүйеде жұмыс істейді. IT-өнімдеріне бейімделудің қажеті жоқ</value>
+  </data>
+  <data name="Tab3_text4" xml:space="preserve">
+    <value>Кез келген құрылғылар</value>
+  </data>
+  <data name="Tab4_text1" xml:space="preserve">
+    <value>Түсінікті</value>
+  </data>
+  <data name="Tab4_text2" xml:space="preserve">
+    <value>Құжаттама</value>
+  </data>
+  <data name="Tab4_text3" xml:space="preserve">
+    <value>Кез-келген клиент біздің жүйелеріміздің қағидаларын оңай түсінуі үшін біз кез-келген бағдарламалық жасақтама немесе аппараттық өнім үшін құжаттарды нақты сипаттадық</value>
+  </data>
+  <data name="Tab4_text4" xml:space="preserve">
+    <value>Құжаттама</value>
+  </data>
+  <data name="Tab5_text1" xml:space="preserve">
+    <value>Жақсы</value>
+  </data>
+  <data name="Tab5_text2" xml:space="preserve">
+    <value>Сапа</value>
+  </data>
+  <data name="Tab5_text3" xml:space="preserve">
+    <value>Біз өз жұмысымызды уақытында және сапалы түрде жүргіземіз, бизнестің мәселелерін барынша тез шешуге тырысамыз.</value>
+  </data>
+  <data name="Tab5_text4" xml:space="preserve">
+    <value>Сапа</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Kcell Solutions cіздің бизнесіңіздің бағдарламалық қамтамасыз етуді, транспорттық жүйені басқаруды және SMS хабарларын таратуды ұйымдастыруда прагматикалық IТ шешімдерін ұсынады.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Kcell Solutions компаниясы 2017 жылы құрылған және Алматы қаласында орналасады.</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Kcell Solutions-қа қош келдіңіздер</value>
+  </data>
+</root>

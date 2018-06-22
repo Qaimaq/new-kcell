@@ -1,0 +1,301 @@
+﻿@{
+    ViewData["Title"] = "Kсell Solutions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@inject IHtmlLocalizer<SharedResource> SharedLocalizer
+@inject IOptions<RequestLocalizationOptions> LocOptions
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@{
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
+}
+
+@using Microsoft.AspNetCore.Routing.Constraints;
+
+@inject IViewLocalizer Localizer
+<!-- HOME -->
+<section id="home" class="padbot0">
+    <!-- TOP SLIDER -->
+    <div class="flexslider top_slider">
+        <ul class="slides">
+            <li class="slide1">
+                <div class="flex_caption1">
+                    <p class="title1 captionDelay2 FromTop">Kcell </p>
+                    <p class="title2 captionDelay4 FromTop">Solutions </p>
+                    <p class="title4 captionDelay8 FromBottom">@Localizer["Slogan"]</p>
+                </div>
+                <a class="slide_btn FromRight" asp-area="" asp-action="About" asp-route-culture="@culture">@Localizer["More"]</a>
+            <li class="slide2">
+                <div class="flex_caption1">
+                    <p class="title1 captionDelay2 FromTop">Kcell </p>
+                    <p class="title2 captionDelay4 FromTop">Solutions </p>
+                    <p class="title4 captionDelay8 FromLeft">@Localizer["Slogan2"]</p>
+                </div>
+                <a class="slide_btn FromRight" asp-area="" asp-action="Contacts" asp-route-culture="@culture">@Localizer["Contacts"]</a>
+            </li>
+        </ul>
+        <!-- VIDEO BACKGROUND -->
+        <a name="P2" class="player" id="P2" data-property="{videoURL:'HDOjxwjqCxI',containment:'.top_slider',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+        <!-- //VIDEO BACKGROUND -->
+    </div><!-- //TOP SLIDER -->
+</section><!-- //HOME -->
+<!-- ABOUT -->
+<section id="about">
+    <div class="row row-space-1 margin-b-2 wow fadeInDown animated" style="visibility:visible; animation-name: fadeInDown;">
+        <h3 class="color-red" style="text-align: center;">@Localizer["Welcome"]</h3>
+        <hr style="margin-top:0;" />
+        <div class="col-sm-10 col-sm-offset-1">
+            <p class="margin-b-40 text-center wow fadeInDown animated fweight-400" style="visibility:visible; animation-name: fadeInDown;text-align:center;font-size:16px;">
+                @Localizer["Text1"]
+                <br><br>
+                @Localizer["Text2"]
+            </p>
+        </div>
+    </div>
+</section><!-- //ABOUT -->
+<!-- ABOUT -->
+<section id="about">
+    <!-- SERVICES -->
+    <div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- ROW -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
+                    <a asp-area="" asp-action="Software" asp-route-culture="@culture">
+                        <h3>@Localizer["Software"]</h3><i class="fa fa-laptop fa-3x service-icon-home"></i>
+                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["Software_text"]</h5>
+                        <p style="text-align:justify;margin-bottom:10px">
+                            @Localizer["Software_text2"]
+                            <br>
+                        </p>
+                        <p style="text-align:center;font-weight:500">
+                            <span class="text-center">@Localizer["Software_text3"]</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
+                    <a asp-area="" asp-action="Car_Tracking" asp-route-culture="@culture">
+                        <h3>@Localizer["Car_Tracking"]</h3><i class="fa fa-search fa-3x service-icon-home"></i>
+                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["Car_Tracking_text"]</h5>
+                        <p style="text-align:justify;margin-bottom:10px">
+                            @Localizer["Car_Tracking_text2"]
+                            <br>
+                        </p>
+                        <p style="text-align:center;font-weight:500">
+                            <span class="text-center">@Localizer["Car_Tracking_text3"]</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
+                    <a asp-area="" asp-action="SMS_Dispatching" asp-route-culture="@culture">
+                        <h3>@Localizer["SMS_Dispatching"]</h3><i class="fa fa-envelope fa-3x service-icon-home"></i>
+                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["SMS_Dispatching_text"]</h5>
+                        <p style="text-align:justify;margin-bottom:10px">
+                            @Localizer["SMS_Dispatching_text2"]
+                            <br>
+                        </p>
+                        <p style="text-align:center;font-weight:500">
+                            @Localizer["SMS_Dispatching_text3"]
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
+                </div>
+            </div><!-- //ROW -->
+        </div><!-- //CONTAINER -->
+    </div><!-- //SERVICES -->
+    <!-- CLEAN CODE -->
+    <div class="cleancode_block">
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <!-- CASTOM TAB -->
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active clearfix" id="tab1">
+                    <p class="title"><b>@Localizer["Tab1_text1"]</b> @Localizer["Tab1_text2"]</p>
+                    <span>@Localizer["Tab1_text3"]</span>
+                </div>
+                <div class="tab-pane fade clearfix" id="tab2">
+                    <p class="title"><b>@Localizer["Tab2_text1"]</b> @Localizer["Tab2_text2"]</p>
+                    <span>@Localizer["Tab2_text3"]</span>
+                </div>
+                <div class="tab-pane fade clearfix" id="tab3">
+                    <p class="title"><b>@Localizer["Tab3_text1"]</b> @Localizer["Tab3_text2"]</p>
+                    <span>@Localizer["Tab3_text3"]</span>
+                </div>
+                <div class="tab-pane fade clearfix" id="tab4">
+                    <p class="title"><b>@Localizer["Tab4_text1"]</b> @Localizer["Tab4_text2"]</p>
+                    <span>@Localizer["Tab4_text3"]</span>
+                </div>
+                <div class="tab-pane fade clearfix" id="tab5">
+                    <p class="title"><b>@Localizer["Tab5_text1"]</b> @Localizer["Tab5_text2"]</p>
+                    <span>@Localizer["Tab5_text3"]</span>
+                </div>
+            </div>
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a  href="#tab1" data-toggle="tab"><i class="fa fa-cog fa-3x service-icon-tabs"></i><span>@Localizer["Tab1_text4"]</span></a></li>
+                <li><a  href="#tab2" data-toggle="tab"><i class="fa fa-wrench fa-3x service-icon-tabs"></i><span>@Localizer["Tab2_text4"]</span></a></li>
+                <li><a  href="#tab3" data-toggle="tab"><i class="fa fa-desktop fa-3x service-icon-tabs"></i><span>@Localizer["Tab3_text4"]</span></a></li>
+                <li><a  href="#tab4" data-toggle="tab"><i class="fa fa-file fa-3x service-icon-tabs"></i><span>@Localizer["Tab4_text4"]</span></a></li>
+                <li><a  href="#tab5" data-toggle="tab"><i class="fa fa-star fa-3x service-icon-tabs"></i><span>@Localizer["Tab5_text4"]</span></a></li>
+            </ul><!-- CASTOM TAB -->
+        </div><!-- //CONTAINER -->
+    </div><!-- //CLEAN CODE -->
+    
+</section><!-- //ABOUT -->
+
+<!-- PROJECTS -->
+<section id="projects" class="padbot20">
+    <!-- CONTAINER -->
+    <div class="container">
+        <h2><b>@Localizer["Our_projects"]</b></h2>
+    </div><!-- //CONTAINER -->
+
+    <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+        <!-- PROJECTS SLIDER -->
+        <div class="owl-demo owl-carousel projects_slider">
+            <!-- work1 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/1.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/1.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //work1 -->
+            <!-- work2 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/2.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/2.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //work2 -->
+            <!-- work3 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/3.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/3.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //work3 -->
+            <!-- work4 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/4.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/4.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //work4 -->
+            <!-- work5 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/5.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/5.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //work5 -->
+            <!-- work6 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/6.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/6.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //work6 -->
+            <!-- work7 -->
+            <div class="item">
+                <div class="work_item">
+                    <div class="work_img">
+                        <img src="~/images/works/7.jpg" alt="" />
+                        <a class="zoom" href="~/images/works/7.jpg" rel="prettyPhoto[portfolio1]"></a>
+                    </div>
+                    <div class="work_description">
+                        <div class="work_descr_cont">
+                            <a href="portfolio-post.html">Ginger Beast</a>
+                            <span>17 March, 2041</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //work7 -->
+        </div><!-- //PROJECTS SLIDER -->
+    </div>
+
+    <!-- OUR CLIENTS -->
+    <div class="our_clients">
+        <!-- CONTAINER -->
+        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+            <h2><b>@Localizer["Our_partners"]</b></h2>
+            <!-- ROW -->
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/1.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/2.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/3.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/4.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/5.jpg" alt="" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 client_img">
+                    <img src="~/images/clients/6.jpg" alt="" />
+                </div>
+            </div><!-- //ROW -->
+        </div><!-- CONTAINER -->
+    </div><!-- //OUR CLIENTS -->
+</section><!-- //PROJECTS -->
+
