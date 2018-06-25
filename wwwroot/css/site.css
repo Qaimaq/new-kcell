@@ -49,12 +49,12 @@
     margin: 0 auto;
     text-align: center;
 }
-
+/*
 .abt p {
     font-size: 16px;
     color: #666;
 }
-
+*/
 .title_sec p {
     display: block;
     padding-bottom: 9px;
@@ -399,7 +399,7 @@ button.close {
 
 #counting_sec {
     background: none 0 0 repeat scroll #f0f0f0;
-    padding: 90px 0;
+    padding: 30px 0;
     padding-top:0 px;
 }
 .counting_sl {
@@ -413,7 +413,7 @@ button.close {
 }
     .counting_sl h2 {
         color: #515050;
-        font-size: 48px;
+        font-size: 28px;
     }
     .counting_sl h4 {
         font-size: 18px;
@@ -679,3 +679,14 @@ h4.classic-title {
     padding-bottom: 80px;
 }
 
+.title-desc {
+    font-size: 16px;
+    line-height: 22px;
+    color: #888;
+}
+.desc-text {
+    color: #888;
+    font-size: 13px !important;
+    line-height: 22px;
+    margin: 0;
+}

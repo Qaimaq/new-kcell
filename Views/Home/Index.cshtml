@@ -49,10 +49,10 @@
 <!-- ABOUT -->
 <section id="about">
     <div class="row row-space-1 margin-b-2 wow fadeInDown animated" style="visibility:visible; animation-name: fadeInDown;">
-        <h3 class="color-red" style="text-align: center;">@Localizer["Welcome"]</h3>
+        <h3 class="" style="text-align: center; color: #888;">@Localizer["Welcome"]</h3>
         <hr style="margin-top:0;" />
         <div class="col-sm-10 col-sm-offset-1">
-            <p class="margin-b-40 text-center wow fadeInDown animated fweight-400" style="visibility:visible; animation-name: fadeInDown;text-align:center;font-size:16px;">
+            <p class="margin-b-40 text-center wow fadeInDown animated fweight-400 title-desc" style="visibility:visible; animation-name: fadeInDown;text-align:center;font-size:16px;">
                 @Localizer["Text1"]
                 <br><br>
                 @Localizer["Text2"]
@@ -70,39 +70,39 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
                     <a asp-area="" asp-action="Software" asp-route-culture="@culture">
-                        <h3>@Localizer["Software"]</h3><i class="fa fa-laptop fa-3x service-icon-home"></i>
-                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["Software_text"]</h5>
-                        <p style="text-align:justify;margin-bottom:10px">
+                        <h3 style="color: #888">@Localizer["Software"]</h3><i class="fa fa-laptop fa-3x service-icon-home"></i>
+                        <p class="desc-text" style="margin: 0;padding: 0;padding-bottom: 10px!important; text-align:left;">@Localizer["Software_text"]</p>
+                        <p style="text-align:left;margin-bottom:10px;color: #888">
                             @Localizer["Software_text2"]
                             <br>
                         </p>
-                        <p style="text-align:center;font-weight:500">
+                        <p style="text-align:left;color: #888">
                             <span class="text-center">@Localizer["Software_text3"]</span>
                         </p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
                     <a asp-area="" asp-action="Car_Tracking" asp-route-culture="@culture">
-                        <h3>@Localizer["Car_Tracking"]</h3><i class="fa fa-search fa-3x service-icon-home"></i>
-                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["Car_Tracking_text"]</h5>
-                        <p style="text-align:justify;margin-bottom:10px">
+                        <h3 style="color: #888">@Localizer["Car_Tracking"]</h3><i class="fa fa-search fa-3x service-icon-home"></i>
+                        <p class="desc-text" style="margin: 0;padding: 0;padding-bottom: 10px!important; text-align:left">@Localizer["Car_Tracking_text"]</p>
+                        <p style="text-align:left;margin-bottom:10px;color: #888">
                             @Localizer["Car_Tracking_text2"]
                             <br>
                         </p>
-                        <p style="text-align:center;font-weight:500">
+                        <p style="text-align:left; color: #888">
                             <span class="text-center">@Localizer["Car_Tracking_text3"]</span>
                         </p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30" style="text-align: center;">
                     <a asp-area="" asp-action="SMS_Dispatching" asp-route-culture="@culture">
-                        <h3>@Localizer["SMS_Dispatching"]</h3><i class="fa fa-envelope fa-3x service-icon-home"></i>
-                        <h5 style="margin: 0;padding: 0;padding-bottom: 10px!important;">@Localizer["SMS_Dispatching_text"]</h5>
-                        <p style="text-align:justify;margin-bottom:10px">
+                        <h3 style="color: #888">@Localizer["SMS_Dispatching"]</h3><i class="fa fa-envelope fa-3x service-icon-home"></i>
+                        <p class="desc-text" style="margin: 0;padding: 0;padding-bottom: 10px!important; text-align:left">@Localizer["SMS_Dispatching_text"]</p>
+                        <p style="text-align:left;margin-bottom:10px; color: #888">
                             @Localizer["SMS_Dispatching_text2"]
                             <br>
                         </p>
-                        <p style="text-align:center;font-weight:500">
+                        <p style="text-align:left; color: #888">
                             @Localizer["SMS_Dispatching_text3"]
                         </p>
                     </a>
