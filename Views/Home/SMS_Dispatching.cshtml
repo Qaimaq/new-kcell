@@ -9,10 +9,10 @@
 
 @inject IHtmlLocalizer<SharedResource> SharedLocalizer
 <!-- BREADCRUMBS -->
-<section class="breadcrumbs_block clearfix parallax">
+<section class="breadcrumbs_block breadcrumbs_block_sms_dispatching clearfix parallax">
     <div class="container center">
-        <h2><b>@Localizer["SMS_Dispatching"]</b></h2>
-        <p>@Localizer["Slogan"]</p>
+        <h2 style="text-shadow: 0 0 20px #000; text-align:left; margin-left: 120px;"><b>@Localizer["SMS_Dispatching"]</b></h2>
+        <p style="color: #fff;text-shadow: 0 0 20px #000; text-align:left; margin-left: 120px;">@Localizer["Slogan"]</p>
     </div>
 </section><!-- //BREADCRUMBS -->
 <!-- start about Section -->
@@ -20,22 +20,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                <div class="title_sec">
-                    <h1>@Localizer["SMS_Dispatching"]</h1>
-                    <hr style="margin-top:0;" />
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
                 <div class="abt">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs6 ">
                         <p class="desc-text" style="text-align:left; margin-bottom:20px">@Localizer["Text1"] @Localizer["Text2"] @Localizer["Text3"] @Localizer["Text4"]</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs6 ">
                         <h4 style="margin-bottom: 20px; text-align:left; color: #888"><b>@Localizer["SMS_Title"]</b></h4>
-                        <p style="text-align:left">@Localizer["SMS_text1"]</p>
-                        <p style="text-align:left">@Localizer["SMS_text2"]</p>
-                        <p style="text-align:left">@Localizer["SMS_text3"]</p>
-                        <p style="text-align:left">@Localizer["SMS_text4"]</p>
+                        <ul style="text-align:left;">
+                        <li style="list-style-type:square">@Localizer["SMS_text1"]</li>
+                        <li style="list-style-type:square">@Localizer["SMS_text2"]</li>
+                        <li style="list-style-type:square">@Localizer["SMS_text3"]</li>
+                        <li style="list-style-type:square">@Localizer["SMS_text4"]</li>
+                        </ul>
                     </div>
                   </div>
             </div>
@@ -54,92 +50,92 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot50">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/close-envelope.png">*@
                             <i class="fa fa-envelope fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title1"]</b></p>
-                        <span>@Localizer["Services_text1"]</span>
+                        <span class="desc-text">@Localizer["Services_text1"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot50">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/api-page.png">*@
                             <i class="fa fa-cogs fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title2"]</b></p>
-                        <span>@Localizer["Services_text2"]</span>
+                        <span class="desc-text">@Localizer["Services_text2"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot50">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/check2.png">*@
                             <i class="fa fa-check-square fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title3"]</b></p>
-                        <span>@Localizer["Services_text3"]</span>
+                        <span class="desc-text">@Localizer["Services_text3"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/microphone.png">*@
                             <i class="fa fa-microphone fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title4"]</b></p>
-                        <span>@Localizer["Services_text4"]</span>
+                        <span class="desc-text">@Localizer["Services_text4"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/smartphone.png">*@
                             <i class="fa fa-mobile fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title5"]</b></p>
-                        <span>@Localizer["Services_text5"]</span>
+                        <span class="desc-text">@Localizer["Services_text5"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/rss-symbol.png">*@
                             <i class="fa fa-rss fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title6"]</b></p>
-                        <span>@Localizer["Services_text6"]</span>
+                        <span class="desc-text">@Localizer["Services_text6"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/sms-message.png">*@
                             <i class="fa fa-reply fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title7"]</b></p>
-                        <span>@Localizer["Services_text7"]</span>
+                        <span class="desc-text">@Localizer["Services_text7"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/internet.png">*@
                             <i class="fa fa-globe fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title8"]</b></p>
-                        <span>@Localizer["Services_text8"]</span>
+                        <span class="desc-text">@Localizer["Services_text8"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
                     <a class="services_item" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/sim.png">*@
                             <i class="fa fa-h-square fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Title9"]</b></p>
-                        <span>@Localizer["Services_text9"]</span>
+                        <span class="desc-text">@Localizer["Services_text9"]</span>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12 margbot30">
@@ -149,30 +145,30 @@
     </div><!-- //SERVICES -->
 </section><!-- //ABOUT -->
 <!-- CLEAN CODE -->
-<div class="cleancode_block">
+<div class="cleancode_block cleancode_block_sms_dispatching">
     <!-- CONTAINER -->
     <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
         <!-- CASTOM TAB -->
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade in active clearfix" id="tab1">
-                <p class="title"><b>SMS</b> @Localizer["Tab1_Title"]</p>
-                <span>@Localizer["Tab1_text"]</span>
+                <p class="title" style="text-shadow: 0 0 20px #000;"><b>SMS</b> @Localizer["Tab1_Title"]</p>
+                <span style="color: #fff;">@Localizer["Tab1_text"]</span>
             </div>
             <div class="tab-pane fade clearfix" id="tab2">
                 <p class="title"><b>SMS</b> @Localizer["Tab2_Title"]</p>
-                <span>@Localizer["Tab2_text"]</span>
+                <span style="color: #fff;">@Localizer["Tab2_text"]</span>
             </div>
             <div class="tab-pane fade clearfix" id="tab3">
                 <p class="title"><b>SMS</b> @Localizer["Tab3_Title"]</p>
-                <span>@Localizer["Tab3_text"]</span>
+                <span style="color: #fff;">@Localizer["Tab3_text"]</span>
             </div>
             <div class="tab-pane fade clearfix" id="tab4">
                 <p class="title"><b>SMS</b> @Localizer["Tab4_Title"]</p>
-                <span>@Localizer["Tab4_text"]</span>
+                <span style="color: #fff;">@Localizer["Tab4_text"]</span>
             </div>
             <div class="tab-pane fade clearfix" id="tab5">
                 <p class="title"><b>SMS</b> @Localizer["Tab5_Title"]</p>
-                <span>@Localizer["Tab5_text"]</span>
+                <span style="color: #fff;">@Localizer["Tab5_text"]</span>
             </div>
         </div>
         <ul id="myTab" class="nav nav-tabs">
@@ -191,7 +187,7 @@
     <section id="projects" class="padbot20">
         <!-- CONTAINER -->
         <div class="container">
-            <h2><b>@Localizer["Our_projects"]</b></h2>
+            <h2 style="color: #652E84"><b>@Localizer["Our_projects"]</b></h2>
         </div><!-- //CONTAINER -->
 
         <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
@@ -309,7 +305,7 @@
         <div class="our_clients">
             <!-- CONTAINER -->
             <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-                <h2><b>@Localizer["Our_partners"]</b></h2>
+                <h2 style="color: #652E84"><b>@Localizer["Our_partners"]</b></h2>
                 <!-- ROW -->
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 client_img">

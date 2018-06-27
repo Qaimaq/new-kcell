@@ -21,10 +21,10 @@
 
 @using Microsoft.AspNetCore.Routing.Constraints;
 <!-- BREADCRUMBS -->
-<section class="breadcrumbs_block clearfix parallax">
+<section class="breadcrumbs_block breadcrumbs_block_career clearfix parallax">
     <div class="container center">
-        <h2><b>@Localizer["Career"]</b></h2>
-        <p>@Localizer["Slogan"]</p>
+        <h2 style="text-shadow: 0 0 20px #000; text-align:left; margin-left: 120px;"><b>@Localizer["Career"]</b></h2>
+        <p style="color: #fff;text-shadow: 0 0 20px #000; text-align:left; margin-left: 120px;">@Localizer["Slogan"]</p>
     </div>
 </section><!-- //BREADCRUMBS -->
 <!-- ABOUT -->
@@ -35,7 +35,7 @@
             <div class="clearfix margbot50" style="margin-top:30px;">
                 <div class="col-md-12 col-md-offset-0 col-sm-12 ">
                     <div class="text-center">
-                        <h3 class="color-red">@Localizer["Title1"]</h3>
+                        <h3 style="color: #652E84;">@Localizer["Title1"]</h3>
                         <hr />
 
                         <p style="text-indent:0;font-size:16px;" class="fweight-400 col-md-10 col-md-offset-1">
@@ -46,18 +46,18 @@
 
                         <p style="text-indent:0;">
                             <ul>
-                                <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text1"] </span></li>
-                                <li style="color:red;"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text2"] </span></li>
+                                <li style="list-style-type:square"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text1"] </span></li>
+                                <li style="list-style-type:square"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text2"] </span></li>
                             </ul>
                         </p>
                     </div>
                     <div class="col-sm-5 wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="200ms">
 
                         <p style="text-indent:0;">
-                            <ul>
-                                <li><span style="font-size:15px;color: #585858 !important;">@Localizer["Text3"] </span></li>
-                                <li><span style="font-size:15px;color: #585858 !important;">@Localizer["Text4"] </span></li>
-                                <li><span style="font-size:15px;color: #585858 !important;">@Localizer["Text5"] </span></li>
+                            <ul style="list-style-type:square">
+                                <li style="list-style-type:square"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text3"] </span></li>
+                                <li style="list-style-type:square"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text4"] </span></li>
+                                <li style="list-style-type:square"><span style="font-size:15px;color: #585858 !important;">@Localizer["Text5"] </span></li>
                             </ul>
                         </p>
                     </div>
@@ -66,13 +66,13 @@
             <div class="row margbot30">
                 <div class="big-title text-center">
                     <h3>
-                        <span class="accent-color">@Localizer["Title3"]</span>
+                        <span style="color: #652E84;">@Localizer["Title3"]</span>
                     </h3>
                     <p class="title-desc">@Localizer["Text6"]</p>
                 </div>
                 <div class="hr5" style="margin-top: 30px; margin-bottom: 35px;"></div>
                 <div class="col-md-4">
-                    <h4 class="classic-title"><span>@Localizer["Contact_us"]</span></h4>
+                    <h4 class="classic-title" style="color: #652E84;"><span>@Localizer["Contact_us"]</span></h4>
                     <div class="row">
                         <form action="/en/Home/SendCv" enctype="multipart/form-data" method="post">
                             <input name="__RequestVerificationToken" type="hidden" value="23mal6caFYkVrgykKxGM9GDlZeAPMzd2lh6R5SX9RDT--PoatMHec2O-wMSxl3Awel0kUUQNcnXB7jEn6Y_ExQ_IC_iqe3Hw0AKluVYbaME1" />                <div class="row">
@@ -299,7 +299,7 @@
                     <!-- End 4 modal-->
                         
                     <div class="col-md-8">
-                        <h4 class="classic-title"><span>@Localizer["Our_vacancies"]</span></h4>
+                        <h4 class="classic-title" style="color: #652E84;"><span>@Localizer["Our_vacancies"]</span></h4>
                         <a href="#aboutModal" data-toggle="modal" data-target="#myModal1">
                             <div class="col-md-3" data-animation="fadeIn" data-animation-delay="03">
                                 <div class="team-member modern">
@@ -373,7 +373,7 @@
 
 </section><!-- //ABOUT -->
 <section id="about-banner">
-    <div class="cleancode_block">
+    <div class="cleancode_block cleancode_block_career">
         <!-- CONTAINER -->
         <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
             <div class="row">
@@ -381,8 +381,8 @@
                 <div class="col-md-10 col-lg-10">
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane fade in active clearfix" id="tab1">
-                            <p class="title"><b>@Localizer["Contact_us"]</b></p>
-                            <span>@Localizer["Slogan"]</span>
+                            <p class="title" style="color: #fff;text-shadow: 0 0 20px #000;"><b>@Localizer["Contact_us"]</b></p>
+                            <span style="color: #fff;text-shadow: 0 0 20px #000;">@Localizer["Slogan"]</span>
 
 
                         </div>
@@ -408,7 +408,7 @@
     <section id="projects" class="padbot20">
         <!-- CONTAINER -->
         <div class="container">
-            <h2><b>@Localizer["Our_projects"]</b></h2>
+            <h2 style="color: #652E84"><b>@Localizer["Our_projects"]</b></h2>
         </div><!-- //CONTAINER -->
 
         <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
@@ -526,7 +526,7 @@
         <div class="our_clients">
             <!-- CONTAINER -->
             <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-                <h2><b>@Localizer["Our_partners"]</b></h2>
+                <h2 style="color: #652E84"><b>@Localizer["Our_partners"]</b></h2>
                 <!-- ROW -->
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 client_img">

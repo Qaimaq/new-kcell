@@ -21,33 +21,29 @@
 
 @using Microsoft.AspNetCore.Routing.Constraints;
 <!-- BREADCRUMBS -->
-<section class="breadcrumbs_block clearfix parallax">
+<section class="breadcrumbs_block breadcrumbs_block_car_tracking clearfix parallax">
     <div class="container center">
-        <h2><b>@Localizer["Car_Tracking"]</b></h2>
-        <p>@Localizer["Slogan"]</p>
+        <h2 style="text-align:left; margin-left: 120px;"><b>@Localizer["Car_Tracking"]</b></h2>
+        <p style="color: #fff;text-shadow: 0 0 20px #000; text-align:left; margin-left: 120px;">@Localizer["Slogan"]</p>
     </div>
 </section><!-- //BREADCRUMBS -->
 <!-- start about Section -->
 <section id="abt_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-                <div class="title_sec">
-                    <h1>@Localizer["Car_Tracking"]</h1>
-                    <hr style="margin-top:0;" />
-                    <h2>@Localizer["Slogan"]</h2>
-                </div>
-            </div>
+            <!--
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+        <div class="title_sec">
+            <h1>@Localizer["Car_Tracking"]</h1>
+            <hr style="margin-top:0;" />
+            <h2>@Localizer["Slogan"]</h2>
+        </div>
+    </div>
+        -->
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
                 <div class="abt">
-                    <p>
-                        @Localizer["Text1"]
-                        <ul>
-                            <li>@Localizer["List1"]</li>
-                            <li>@Localizer["List2"]</li>
-                            <li>@Localizer["List3"]</li>
-                            <li>@Localizer["List4"] </li>
-                        </ul>
+                    <p class="desc-text" style="margin-bottom:30px">
+                        @Localizer["Text1"] @Localizer["List1"] @Localizer["List2"] @Localizer["List3"] @Localizer["List4"] 
                     </p>
                 </div>
             </div>
@@ -65,85 +61,85 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/satellite.png">*@
                             <i class="fa fa-search fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Line1_Title1"]</b> @Localizer["Line1_Title2"]</p>
-                        <span>@Localizer["Line1_text1"]</span>
+                        <span class="desc-text">@Localizer["Line1_text1"]</span>
                     </a>
                 </div>
 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/bus-stop.png">*@
                             <i class="fa fa-bus fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Line1_Title3"]</b> @Localizer["Line1_Title4"]</p>
-                        <span>@Localizer["Line1_text2"]</span>
+                        <span class="desc-text">@Localizer["Line1_text2"]</span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/passenger-traffic.png">*@
                             <i class="fa fa-user fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Line1_Title5"]</b> @Localizer["Line1_Title6"]</p>
-                        <span>@Localizer["Line1_text3"]</span>
+                        <span class="desc-text">@Localizer["Line1_text3"]</span>
                     </a>
                 </div>
 
 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/cloud-monitoring.png">*@
                             <i class="fa fa-cloud fa-5x service-icon-home"></i>
                         </div>
                         <p><b>@Localizer["Line1_Title7"]</b> @Localizer["Line1_Title8"]</p>
-                        <span>@Localizer["Line1_text4"]</span>
+                        <span class="desc-text">@Localizer["Line1_text4"]</span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/tire-pressure.jpg">*@
                             <i class="fa fa-thermometer-quarter fa-5x service-icon-home"></i>
                         </div>
                         <p><b>Tire</b> Pressure</p>
-                        <span>@Localizer["Line2_text1"]</span>
+                        <span class="desc-text">@Localizer["Line2_text1"]</span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/wialon-logistic.png">*@
                             <i class="fa fa-undo fa-5x service-icon-home"></i>
                         </div>
                         <p><b>Wialon</b> Logistic</p>
-                        <span>@Localizer["Line2_text2"]</span>
+                        <span class="desc-text">@Localizer["Line2_text2"]</span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/bus-report.jpg">*@
                             <i class="fa fa-registered fa-5x service-icon-home"></i>
                         </div>
                         <p><b>Bus</b> Report</p>
-                        <span>@Localizer["Line2_text3"]</span>
+                        <span class="desc-text">@Localizer["Line2_text3"]</span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot60">
                     <a class="item_car_tracking" href="javascript:void(0);">
-                        <div class="service-icon" style="margin-top:-25px; margin-bottom: 20px; text-align:center;">
+                        <div class="service-icon" style="margin-top:-25px; text-align:center;">
                             @*<img src="~/images/info-bus.jpg">*@
                             <i class="fa fa-info fa-5x service-icon-home"></i>
                         </div>
                         <p><b>Info</b> Bus</p>
-                        <span>@Localizer["Line2_text4"]</span>
+                        <span class="desc-text">@Localizer["Line2_text4"]</span>
                     </a>
                 </div>
 
@@ -152,7 +148,7 @@
     </div><!-- //SERVICES -->
 </section><!-- //ABOUT -->
 <section id="about-banner">
-    <div class="cleancode_block">
+    <div class="cleancode_block cleancode_block_car_tracking">
         <!-- CONTAINER -->
         <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
             <div class="row">
@@ -161,7 +157,7 @@
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane fade in active clearfix" id="tab1">
                             <p class="title"><b>@Localizer["More_about_us"]</b></p>
-                            <span>@Localizer["Slogan"]</span>
+                            <span style="color: #fff;text-shadow: 0 0 20px #000;">@Localizer["Slogan"]</span>
 
 
                         </div>
@@ -187,7 +183,7 @@
     <section id="projects" class="padbot20">
         <!-- CONTAINER -->
         <div class="container">
-            <h2><b>@Localizer["Our_projects"]</h2>
+            <h2 style="color: #652E84"><b>@Localizer["Our_projects"]</b></h2>
         </div><!-- //CONTAINER -->
 
         <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
@@ -305,7 +301,7 @@
         <div class="our_clients">
             <!-- CONTAINER -->
             <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-                <h2><b>@Localizer["Our_partners"]</b></h2>
+                <h2 style="color: #652E84"><b>@Localizer["Our_partners"]</b></h2>
                 <!-- ROW -->
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 client_img">

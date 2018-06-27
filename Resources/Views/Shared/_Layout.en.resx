@@ -168,4 +168,10 @@
   <data name="Footer_text" xml:space="preserve">
     <value>We value people more than profit. We strive for quality, not quantity to achieve results. Thus, we provide a stable working relationship with our customers.</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>Nakhimova street, 10, 050040</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Almaty, Kazakhstan</value>
+  </data>
 </root>

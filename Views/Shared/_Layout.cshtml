@@ -215,13 +215,13 @@
                         <ul class="list-unstyled footer-list fweight-300 margin-left8" style="margin-top:8px;">
                             <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;color: #ffffff!important;">
                                 <p style="font-weight:300;font-size:14px;color: #ffffff!important;margin-bottom:4px!important;">
-                                    <i class="fa fa-briefcase"></i> &nbsp; улица Нахимова, 10, 050040
+                                    <i class="fa fa-briefcase"></i> &nbsp; @Localizer["Address"]
                                 </p>
                             </li>
 
                             <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;"><a href="tel:+77272622565" class="footer-list-link fweight-300" style="font-size:14px;"><i class="fa fa-phone"></i> &nbsp;  + 7 727 262-25-65</a></li>
                             <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;"><a href="mailto:info@kcell.solutions" class="footer-list-link fweight-300" style="font-size:14px;"><i class="fa fa-envelope"></i>&nbsp;  info@kcell.solutions</a></li>
-                            <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;"><p style="font-weight:300;font-size:14px;color: #ffffff!important;margin-bottom:4px!important;padding-bottom:10px;"><i class="fa fa-share-square"></i> &nbsp;Алматы, Казахстан </li>
+                            <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;"><p style="font-weight:300;font-size:14px;color: #ffffff!important;margin-bottom:4px!important;padding-bottom:10px;"><i class="fa fa-share-square"></i> &nbsp;@Localizer["City"] </li>
                         </ul>
                         <ul class="social margin-left8" >
                             <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
@@ -251,7 +251,7 @@
                 </div><!-- //ROW -->
                 <div class="row copyright">
                     <div class="col-lg-12 text-center">
-                        <p>@Localizer["Developed"] <i class="fa fa-heart"></i>, <a href="https://qaimaq.com">Qaimaq</a></p>
+                        <p>@Localizer["Developed"] <a href="https://qaimaq.tech">Qaimaq</a></p>
                     </div>
                 </div><!-- //ROW -->
             </div><!-- //CONTAINER -->
@@ -366,7 +366,7 @@
                 var marker = new google.maps.Marker({
                     position: map.getCenter(),
                     animation: google.maps.Animation.BOUNCE,
-                    icon: '..//images/map-marker.png',
+                    icon: '..//images/map-marker-point.png',
                     map: map
                 });
             }
@@ -477,7 +477,7 @@
                 var marker = new google.maps.Marker({
                     position: map.getCenter(),
                     animation: google.maps.Animation.BOUNCE,
-                    icon: '..//images/map-marker.png',
+                    icon: '..//images/map-marker-point.png',
                     map: map
                 });
             }

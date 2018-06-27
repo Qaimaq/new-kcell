@@ -44,6 +44,11 @@ namespace KCell_Solutions
                 options.DefaultRequestCulture = new RequestCulture("ru");
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
+                options.RequestCultureProviders = new List<IRequestCultureProvider>
+                    {
+                        new QueryStringRequestCultureProvider(),
+                        new CookieRequestCultureProvider()
+                    };
             });
         }
 
@@ -65,8 +70,13 @@ namespace KCell_Solutions
             {
                 DefaultRequestCulture = new RequestCulture("ru"),
                 SupportedCultures = supportedCultures,
-                SupportedUICultures = supportedCultures
-            });
+                SupportedUICultures = supportedCultures,
+                RequestCultureProviders = new List<IRequestCultureProvider>
+                {
+                    new QueryStringRequestCultureProvider(),
+                    new CookieRequestCultureProvider()
+                }
+        });
            if (env.IsDevelopment())
             {
                 app.UseBrowserLink();

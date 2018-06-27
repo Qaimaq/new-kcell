@@ -218,13 +218,13 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 .breadcrumbs_block h2 {
 	margin-bottom:15px;
 	line-height:80px;
-	font-size:80px;
+	font-size:50px;
 	color:#fff;
 }
 .breadcrumbs_block p {
 	margin:0;
 	line-height:34px;
-	font-size:26px;
+	font-size:18px;
 	color:#999;
 }
 
@@ -474,11 +474,12 @@ header {
 
 /* __________ Clean Code __________ */
 .cleancode_block {
-	padding:96px 0 78px;
-	background-image:url(../images/clean_code_bg.jpg);
-	background-size:cover;
-	background-position:0 0;
-	background-attachment:fixed !important;
+    padding: 96px 0 78px;
+    background-image: url(../images/clean_code_bg.jpg);
+    background-size: cover;
+    background-position: right !important;
+    background-position: 0 0;
+    background-attachment: fixed !important;
 }
 
 .cleancode_block .tab-content {

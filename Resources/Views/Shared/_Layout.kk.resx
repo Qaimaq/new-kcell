@@ -168,4 +168,10 @@
   <data name="Footer_text" xml:space="preserve">
     <value>Біз адамдарды пайдаға қарағанда көбірек сыйлаймыз. Нәтижеге санымен емес сапамен жетуге тырысамыз. Осылай біз клиенттермен тұрақты қарым-қатынас орнатамыз.</value>
   </data>
+  <data name="Address" xml:space="preserve">
+    <value>Нахимова көшесі, 10, 050040</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Алматы, Қазақстан</value>
+  </data>
 </root>

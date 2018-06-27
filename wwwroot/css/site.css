@@ -202,7 +202,6 @@
     font-size: 30px;
     font-weight: 400;
     color: #652E84;
-    margin-bottom: 20px;
 
 }
 .service-icon-tabs {
@@ -591,7 +590,7 @@ button.close {
   
     display: block;
     cursor: default;
-    min-height: 378px;
+    min-height: 340px;
     padding: 20px 20px;
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.15);
     padding-top: 20px;
@@ -689,4 +688,51 @@ h4.classic-title {
     font-size: 13px !important;
     line-height: 22px;
     margin: 0;
+}
+
+.home-icon {
+    display: block !important;
+    font-size: 3em !important;
+    float: left !important;
+    padding-right: 20px !important;
+    margin-bottom: 100px !important;
+}
+.breadcrumbs_block_about {
+    background-image: url(../images/workspace3.jpg)!important;
+}
+.cleancode_block_about {
+    background-image: url(../images/workspace3.jpg)!important;
+}
+
+.flexslider.top_slider {
+    height: 645px !important;
+}
+li.slide1 {
+    height: 645px !important;
+}
+li.slide2 {
+    height: 645px !important;
+}
+
+.breadcrumbs_block_software {
+    background-image: url(../images/software-banner10.jpg) !important;
+}
+.breadcrumbs_block_car_tracking {
+    background-image: url(../images/car-tracking-banner.jpeg) !important;
+}
+.cleancode_block_car_tracking {
+    background-image: url(../images/car-tracking-banner.jpeg) !important;
+}
+.breadcrumbs_block_career {
+    background-image: url(../images/interview3.jpg) !important;
+}
+.cleancode_block_career {
+    background-image: url(../images/interview3.jpg) !important;
+}
+
+.breadcrumbs_block_sms_dispatching {
+    background-image: url(../images/sms-check.jpg) !important;
+}
+.cleancode_block_sms_dispatching {
+    background-image: url(../images/kcell-banner2.jpg) !important;
 }
