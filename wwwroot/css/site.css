@@ -153,12 +153,12 @@
 
 #Contact {
     top: 300px;
-    background-color: #007bbc
+    background-color: #652E84;
 }
 
 #Call {
     top: 370px;
-    background-color: #007bbc
+    background-color: #652E84;
 }
 
 #map {
@@ -727,7 +727,7 @@ li.slide2 {
     background-image: url(../images/interview3.jpg) !important;
 }
 .cleancode_block_career {
-    background-image: url(../images/interview3.jpg) !important;
+    background-image: url(../images/interview.jpg) !important;
 }
 
 .breadcrumbs_block_sms_dispatching {
@@ -736,3 +736,20 @@ li.slide2 {
 .cleancode_block_sms_dispatching {
     background-image: url(../images/kcell-banner2.jpg) !important;
 }
+/*
+html,
+body,
+#page {
+    height: 100%;
+}
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 90px;
+}
+
+.footer {
+    height: 380px;
+    margin-top: -380px;
+}
+    */
