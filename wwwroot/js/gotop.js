@@ -1,6 +1,6 @@
 var limit = $(window).height() / 3,
 
-$backToTop = $('#back-to-top');
+$backToTop = $('.backtotop');
 
 $(window).scroll(function () {
  

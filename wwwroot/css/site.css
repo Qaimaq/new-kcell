@@ -736,23 +736,33 @@ li.slide2 {
 .cleancode_block_sms_dispatching {
     background-image: url(../images/kcell-banner2.jpg) !important;
 }
-/*
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html,
-body,
-#page {
+body {
     height: 100%;
 }
-.content {
-    box-sizing: border-box;
+
+.wrapper {
+    position: relative;
     min-height: 100%;
-    padding-bottom: 90px;
+}
+
+.content {
+    padding-bottom: 400px;
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 380px;
-    margin-top: -380px;
 }
-    */
+    
 
 @import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
@@ -771,12 +781,12 @@ button:focus {
 }
 
 .radial {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     right: 25px;
     bottom: 25px;
-    background: #652E84;
+    background: #7708bf;
     border-radius: 50%;
     opacity: .8;
     transition: all 0.5s;
@@ -786,14 +796,15 @@ button:focus {
 .fab {
     border: none;
     color: white;
-    background-color: #7708bf;
+    background-color: #652E84;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     right: 25px;
     bottom: 25px;
     transition: all 0.5s;
+    z-index: 999;
 }
 
     .fab:hover {
@@ -802,7 +813,7 @@ button:focus {
 
 #plus {
     transition: all 0.5s;
-    margin-top: 7px;
+    margin-top: 0px;
 }
 
 #fa-1, #fa-2, #fa-3 {
@@ -826,6 +837,9 @@ button:focus {
     right: -100px;
     bottom: -100px;
 }
+    .radial.open:active {
+        opacity: .8;
+    }
 
     .radial.open .fab {
         background-color: #7708bf;
@@ -833,6 +847,7 @@ button:focus {
     }
 
     .radial.open #plus {
+        margin-top: 7px;
         transform: rotateZ(135deg) translate(-1px, 3px);
     }
 
@@ -850,3 +865,53 @@ button:focus {
         transition-delay: 0.2s;
         transform: translate(-10px, -75px);
     }
+    .radial.open #plus:before {
+        content: "\f067" !important;
+        transform: rotateZ(135deg) translate(-1px, 3px);
+    }
+.fa-15x {
+    font-size:1.5em;
+}
+.backtotop {
+    position: fixed;
+    z-index: 999;
+    bottom: 80px;
+    right: 25px;
+    border-radius: 100%;
+    /*
+    margin: 30px auto;
+    margin-right: 25px;
+    */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /*border: 1px solid #888;*/
+    background: #652E84;
+    background-image: linear-gradient(to top, #390188 50%, transparent 50%);
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: 100% 200%;
+    /*transition: all 0.2s ease-out;*/
+}
+.backtotop svg {
+  transition: all 0.3s ease;
+}
+.backtotop svg polygon {
+  fill: #fff;
+  transition: all 0.2s ease-out;
+}
+.backtotop:hover {
+  background-position: bottom center;
+}
+.backtotop:hover svg {
+  transform: scale(1.6);
+}
+.backtotop:hover svg polygon {
+  transition: all 1s ease-out;
+  fill: #fff;
+}
+
+.active-button {
+     display:none!important;
+}
+
