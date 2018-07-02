@@ -29,7 +29,7 @@
 
     @*<link href="~/css/cyan.css" rel="stylesheet" type="text/css" />
         <link href="~/css/fontello.css" rel="stylesheet" type="text/css" />*@
-    <link rel="shortcut icon" href="~/images/favicon3.png">
+    <link rel="shortcut icon" href="~/images/favicon4.ico">
     <!-- CSS -->
     <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/css/flexslider.css" rel="stylesheet" type="text/css" />
@@ -51,7 +51,7 @@
 
         @*<link href="~/css/cyan.css" rel="stylesheet" type="text/css" />
             <link href="~/css/fontello.css" rel="stylesheet" type="text/css" />*@
-        <link rel="shortcut icon" href="~/images/favicon3.png">
+        <link rel="shortcut icon" href="~/images/favicon4.ico">
         <!-- CSS -->
         <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="~/css/flexslider.css" rel="stylesheet" type="text/css" />
@@ -164,55 +164,42 @@
 
                 <div class="content">
                     @RenderBody()
-
-                    <div class="radial">
-                        <a href="tel:+77272622565"><button class="fa fa-phone fa-2x" id="fa-1"></button></a>
-                        <a href="mailto:info@kcell.solutions"><button class="fa fa-envelope fa-2x" id="fa-2"></button></a>
-                        <a asp-area="" asp-action="Contacts" asp-route-culture="@culture"><button class="fa fa-share-square fa-2x" id="fa-3"></button></a>
-                        <button class="fab">
-                            <div class="fa fa-comment fa-15x" id="plus"></div>
-                        </button>
-                    </div>
-
-                    <div class="backtotop">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 45 44">
-                            <polygon fill="none" points="31.041,24.704 22.821,16.483 22.821,16.484 22.82,16.483 14.601,24.703 17.163,27.267 22.82,21.609 28.478,27.267 "></polygon>
-                        </svg>
-                    </div>
-                    @*
-                <div id="mySidenav" class="sidenav hidden-sm hidden-xs">
-                    <a href="mailto:info@kcell.solutions" id="Contact"><i class=" fa fa-envelope-open" style="font-size:25px;font-weight:500;margin-right:20px;"></i>Написать</a>
-                    <a href="tel:+77272622565" id="Call"><i class="fa fa-phone-square" style="font-size:30px;font-weight:500;margin-right:20px;"></i>Позвонить</a>
                 </div>
 
-                <div id="back-to-top">
-                    <i class="fa fa-chevron-up"></i>
-                </div>
-                    *@
-                    @*<a href="tel:+77122272072" class="back-to-top2">
-                    <i class="icon-phone icon-medium-effect icon-effect-1"></i>
-                </a>*@
+                @*
+            <div id="mySidenav" class="sidenav hidden-sm hidden-xs">
+                <a href="mailto:info@kcell.solutions" id="Contact"><i class=" fa fa-envelope-open" style="font-size:25px;font-weight:500;margin-right:20px;"></i>Написать</a>
+                <a href="tel:+77272622565" id="Call"><i class="fa fa-phone-square" style="font-size:30px;font-weight:500;margin-right:20px;"></i>Позвонить</a>
+            </div>
 
-                </div>
+            <div id="back-to-top">
+                <i class="fa fa-chevron-up"></i>
+            </div>
+                *@
+                @*<a href="tel:+77122272072" class="back-to-top2">
+                <i class="icon-phone icon-medium-effect icon-effect-1"></i>
+            </a>*@
+
+
 
             </div><!-- .content -->
-           @*
-            <!-- CONTACTS -->
-            <section id="contacts"></section><!-- //CONTACTS -->
-               *@
+            @*
+        <!-- CONTACTS -->
+        <section id="contacts"></section><!-- //CONTACTS -->
+            *@
             <!-- FOOTER -->
             <footer class="footer">
                 <!-- CONTAINER -->
                 <div class="container">
                     <!-- ROW -->
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-ss-12  padbot30 foot_about_block">
                             <h4><b>@Localizer["Briefly_about_us"]</b></h4>
                             <p>@Localizer["Footer_text"]</p>
 
 
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-ss-12 padbot30">
                             <h4 class=""><b>@Localizer["Our_contacts"]</b></h4>
                             <ul class="list-unstyled footer-list fweight-300" style="margin-top:8px;">
                                 <li class="footer-list-item" style="font-size:12px;margin-bottom:4px;color: #ffffff!important;">
@@ -234,7 +221,7 @@
 
                         </div>
                         <div class="respond_clear"></div>
-                        <div class="col-lg-4 col-md-4 padbot30">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-ss-12 padbot30">
                             <h4><b>@Localizer["Subscribe"]</b></h4>
                             <!-- CONTACT FORM -->
                             <div class="span9 contact_form">
@@ -250,12 +237,27 @@
                         </div>
                     </div><!-- //ROW -->
                     <div class="row copyright">
-                        <div class="col-lg-12 text-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-ss-12 text-center">
                             <p>@Localizer["Developed"] <a href="https://qaimaq.tech">Qaimaq</a></p>
                         </div>
                     </div><!-- //ROW -->
                 </div><!-- //CONTAINER -->
             </footer><!-- //FOOTER -->
+
+            <div class="radial">
+                <a href="tel:+77272622565"><i class="fa fa-phone fa-2x" id="fa-1"></i></a>
+                <a href="mailto:info@kcell.solutions"><i class="fa fa-envelope fa-2x" id="fa-2"></i></a>
+                <a asp-area="" asp-action="Contacts" asp-route-culture="@culture"><i class="fa fa-share-square fa-2x" id="fa-3"></i></a>
+                <button class="fab">
+                    <div class="fa fa-comment fa-15x" id="plus"></div>
+                </button>
+            </div>
+
+            <div class="backtotop">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 45 44">
+                    <polygon fill="none" points="31.041,24.704 22.821,16.483 22.821,16.484 22.82,16.483 14.601,24.703 17.163,27.267 22.82,21.609 28.478,27.267 "></polygon>
+                </svg>
+            </div>
             @*
         <!-- MAP -->
         <div id="map">
@@ -293,7 +295,7 @@
         <script src="~/js/jquery.counterup.min.js"></script>
 
         <script>
-            $(".radial").click(function (e) {
+            $(".fab").click(function (e) {
                 e.preventDefault();
                 $(".backtotop").toggleClass('active-button');
                 $(this).removeClass('active-button');
@@ -436,7 +438,7 @@
         <script src="~/js/jquery.counterup.min.js"></script>
 
         <script>
-            $(".radial").click(function (e) {
+            $(".fab").click(function (e) {
                 e.preventDefault();
                 $(".backtotop").toggleClass('active-button');
                 $(this).removeClass('active-button');

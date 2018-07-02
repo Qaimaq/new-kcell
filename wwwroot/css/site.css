@@ -695,7 +695,7 @@ h4.classic-title {
     font-size: 3em !important;
     float: left !important;
     padding-right: 20px !important;
-    margin-bottom: 100px !important;
+    margin-bottom: 160px !important;
 }
 .breadcrumbs_block_about {
     background-image: url(../images/workspace3.jpg)!important;
@@ -731,10 +731,10 @@ li.slide2 {
 }
 
 .breadcrumbs_block_sms_dispatching {
-    background-image: url(../images/sms-check.jpg) !important;
+    background-image: url(../images/kcell-banner2.jpg) !important;
 }
 .cleancode_block_sms_dispatching {
-    background-image: url(../images/kcell-banner2.jpg) !important;
+    background-image: url(../images/check3.jpg) !important;
 }
 
 * {
@@ -757,6 +757,7 @@ body {
 }
 
 .footer {
+    z-index: 99;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -764,23 +765,13 @@ body {
 }
     
 
-@import "compass/css3";
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    background: #efefef;
-}
 
 button:focus {
     outline: 0;
 }
 
 .radial {
+    z-index: 999;
     width: 40px;
     height: 40px;
     position: fixed;
@@ -915,3 +906,42 @@ button:focus {
      display:none!important;
 }
 
+@media (max-width: 767px) {
+
+    img.BWFilter.BWfade {
+        display: none!important;
+    }
+    .footer {
+        height: 700px;
+    }
+    .content {
+        padding-bottom: 700px;
+    }
+    .foot_about_block p {
+        margin-bottom: 5px !important;
+        padding-right: 0px !important;
+        line-height: 24px !important;
+        font-size: 12px !important;
+    }
+    .breadcrumbs_block h2 {
+        font-size: 30px!important;
+    }
+    .marginleft85 {
+        margin-left: 85px!important;
+    }
+    .career-form-block {
+        margin-left: 0px!important;
+    }
+    .menu_block {
+        height: 65px!important;
+    }
+    .navmenu {
+        top: 65px!important;
+    }
+    .flexslider.top_slider {
+        bottom: 12px;
+    }
+    .padbot30 {
+        padding-bottom: 0px !important;
+    }
+}

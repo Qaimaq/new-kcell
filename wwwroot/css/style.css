@@ -475,7 +475,7 @@ header {
 /* __________ Clean Code __________ */
 .cleancode_block {
     padding: 96px 0 78px;
-    background-image: url(../images/clean_code_bg.jpg);
+    background-image: url(../images/radar-dish2.jpg);
     background-size: cover;
     background-position: right !important;
     background-position: 0 0;
@@ -1873,8 +1873,8 @@ input[type="text"].last {margin-right:0;}
 
 
 /* __________ Menu __________ */
-	a.menu_toggler {display:inline-block; float:right; margin: 20px 0 0 20px; width:40px; height:40px; text-align:center; line-height:38px; font-size:23px; color:#fff; background-color:#333;}
-	a.menu_toggler:hover {background-color:#333;}
+	a.menu_toggler {display:inline-block; float:right; margin: 20px 0 0 20px; width:40px; height:40px; text-align:center; line-height:38px; font-size:23px; color:#000; background-color:#fff;}
+	/*a.menu_toggler:hover {background-color:#333;}*/
 
 	.navmenu {position:absolute; left:0; right:0; top:80px; background-color:#fff;}
 	.navmenu ul {padding:10px 0;}
@@ -1896,7 +1896,7 @@ input[type="text"].last {margin-right:0;}
 	.cleancode_block .nav-tabs li a {width:120px; height:120px; padding-top:24px;}
 	.cleancode_block .nav-tabs li a i {width:45px; height:45px;}
 	.cleancode_block .nav-tabs li a span {font-size:13px;}
-	.cleancode_block .nav-tabs li a i {background-position:0 -45px;}
+	.cleancode_block .nav-tabs li a i {background-position:0 -45px; margin-bottom: 16px;}
 	.nav-tabs li a:hover i {background-position:0 -90px; transform:translateY(-5px); -o-transform:translateY(-5px); -ms-transform:translateY(-5px); -webkit-transform:translateY(-5px);}
 	.nav-tabs li.active a i {background-position:0 0; transform:translateY(-10px); -o-transform:translateY(-10px); -ms-transform:translateY(-10px); -webkit-transform:translateY(-10px);}
 

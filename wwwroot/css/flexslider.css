@@ -44,7 +44,6 @@ html[xmlns] .slides {display: block;}
     .flexslider.top_slider {
         min-height: 564px;
         background-color: #333;
-        z-index: 1;
     }
 .flexslider.top_slider:before {
 	content:'';
