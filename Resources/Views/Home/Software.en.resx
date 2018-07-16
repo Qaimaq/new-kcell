@@ -189,4 +189,7 @@
   <data name="Text3" xml:space="preserve">
     <value>The company employs up to 10 people.</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Our clients</value>
+  </data>
 </root>

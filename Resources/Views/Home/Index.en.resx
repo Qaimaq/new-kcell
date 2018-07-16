@@ -246,4 +246,7 @@
   <data name="Welcome" xml:space="preserve">
     <value>Welcome to Kcell Solutions</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Our clients</value>
+  </data>
 </root>

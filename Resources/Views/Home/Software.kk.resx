@@ -189,4 +189,7 @@
   <data name="Text3" xml:space="preserve">
     <value>Компанияда 10 адам жұмыс істейді.</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Біздің клиенттер</value>
+  </data>
 </root>

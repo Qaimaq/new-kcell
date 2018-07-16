@@ -772,8 +772,8 @@ button:focus {
 
 .radial {
     z-index: 999;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     position: fixed;
     right: 25px;
     bottom: 25px;
@@ -789,8 +789,8 @@ button:focus {
     color: white;
     background-color: #652E84;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     position: fixed;
     right: 25px;
     bottom: 25px;
@@ -866,15 +866,15 @@ button:focus {
 .backtotop {
     position: fixed;
     z-index: 999;
-    bottom: 80px;
+    bottom: 90px;
     right: 25px;
     border-radius: 100%;
     /*
     margin: 30px auto;
     margin-right: 25px;
     */
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     cursor: pointer;
     /*border: 1px solid #888;*/
     background: #652E84;
@@ -944,4 +944,62 @@ button:focus {
     .padbot30 {
         padding-bottom: 0px !important;
     }
+    .nav-tabs li.active a span {
+        padding-top: 0px!important;
+    }
+    .owl-item {
+        text-align: center;
+    }
+    img.client_img.mega-plaza-client {
+        margin-top: 0px;
+    }
+    img.client_img.turkuaz-machinery-client {
+        margin-top: 0px!important;
+    }
+    img.client_img.global-air-client {
+        margin-top: 55px!important;
+        margin-left: 0px!important;
+    }
+    img.client_img.aitas-kz-client {
+        margin-left: 0px !important;
+    }
+    img.client_img.astana-motors-client {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+    }
+    img.client_img.hyundai-client {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+    }
+    img.client_img.subaru-client {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+    }
+    .sub-menu.language ul {
+        display: block !important;
+        position: static !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .our_clients .client_img {
+        opacity: 1!important;
+    }
+    
+}
+
+.work_img {
+    min-height: 265px;
+}
+
+.sub-menu.language ul {
+    display: none;
+    position: absolute;
+    z-index: 9990;
+    width: 70px;
+    left: 140%;
+    top: 100%;
+    padding: 0;
+    margin: 0 0 0 -90px;
 }

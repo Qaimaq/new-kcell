@@ -533,10 +533,10 @@ header {
 	padding:0 15px;
 }
 .cleancode_block .nav-tabs li a {
-	width:170px;
-	height:170px;
+	width:150px;
+	height:150px;
 	margin:0;
-	padding:54px 0 0;
+	padding:45px 0 0;
 	text-align:center;
 	border:0 !important;
 	border-radius:0;
@@ -609,6 +609,7 @@ header {
     -o-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     -webkit-transform: translateY(-30px);
+    padding-top: 10px;
 }
 
 
@@ -813,7 +814,7 @@ ul.project_info li span {color:#979797;}
 /* __________ Our Clients __________ */
 .our_clients {
     padding:0;
-    padding-top:100px;
+    padding-top:60px;
 
 }
 
