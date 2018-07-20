@@ -198,4 +198,7 @@
   <data name="Text1" xml:space="preserve">
     <value>Көліктік паркті басқару күрделі процесс. Ол үшін мына мәселелерді шешу керек:</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Біздің клиенттер</value>
+  </data>
 </root>

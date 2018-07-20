@@ -198,4 +198,7 @@
   <data name="Text1" xml:space="preserve">
     <value>Managing a transport fleet is a complex process. Here are just some of the issues that need to be addressed:</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Our clients</value>
+  </data>
 </root>

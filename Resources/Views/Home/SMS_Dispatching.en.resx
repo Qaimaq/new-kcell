@@ -240,4 +240,7 @@
   <data name="Title9" xml:space="preserve">
     <value>SIM-hosting</value>
   </data>
+  <data name="Our_clients" xml:space="preserve">
+    <value>Our clients</value>
+  </data>
 </root>
